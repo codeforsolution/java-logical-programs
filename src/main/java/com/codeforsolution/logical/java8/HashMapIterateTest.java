@@ -27,6 +27,8 @@ public class HashMapIterateTest {
         //using Stream API
         hm.entrySet().stream().forEach(map -> System.out.println(map.getKey() + " = "+map.getValue()));
 
+
+
     }
 
 }

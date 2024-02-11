@@ -9,7 +9,7 @@ package com.codeforsolution.logical.java;
 public class FindLongestPrefix {
 
     public static void main(String[] args) {
-        String[] arr = {"javaprogramming", "javadeveloper", "javaprogrammer", "javaarchitect"};//{"giorgi", "gio", "gior", "giorg", "gior"};
+        String[] arr = {"javaprogramming", "javadeveloper", "javaprogrammer", "javaarchitect"};
         System.out.println(longestCommonPrefix(arr));
     }
 

@@ -9,18 +9,26 @@ public class PalindromeExample {
     public static void main(String[] args) {
 
         String str = "abcba";
+        boolean isPalindrome = palindromeCheck(str);
+        if(isPalindrome){
+            System.out.println("String is palindrome");
+        }else {
+            System.out.println("String is not palindrome");
+        }
+
+    }
+
+    private static boolean palindromeCheck(String str) {
 
         char[] ch = str.toCharArray();
         StringBuilder stringBuilder = new StringBuilder();
         for(int i = ch.length-1; i>=0; i--){
             stringBuilder.append(ch[i]);
         }
-
         if(str.equals(stringBuilder)){
-            System.out.println("Given string is Palindrome");
+            return true;
         }else{
-            System.out.println("Not a Palindrome string");
+            return  false;
         }
-
     }
 }

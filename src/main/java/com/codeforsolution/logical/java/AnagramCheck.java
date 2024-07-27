@@ -19,7 +19,6 @@ public class AnagramCheck {
         } else {
             System.out.println("Not anagram");
         }
-
     }
 
     private static boolean isAnagram(String str1, String str2) {

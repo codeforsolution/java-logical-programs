@@ -13,5 +13,9 @@ public class FindSumOfIntegers {
         //2nd method
         Integer sumOfNumbers = numbers.stream().reduce((a, b) -> a + b).get();
         System.out.println(sumOfNumbers);
+
+        //3rd method
+        Integer sumOfNum = numbers.stream().reduce(Integer::sum).get();
+        System.out.println(sumOfNum);
     }
 }

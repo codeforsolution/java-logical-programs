@@ -26,7 +26,6 @@ public class FindNumbersTest {
             if(num>20 && num < 100){
                 return (num % 10 ) == 1;
             } else {
-                int rem =  (num / 10) ;
                 num = num / 10;
             }
         }

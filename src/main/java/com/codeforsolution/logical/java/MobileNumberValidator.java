@@ -10,7 +10,6 @@ public class MobileNumberValidator {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a mobile number to validate");
         String mobilenumber = sc.nextLine();
-
         validateMobileNumber(mobilenumber);
 
     }

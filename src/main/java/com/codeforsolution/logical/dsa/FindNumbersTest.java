@@ -5,7 +5,7 @@
  * Find the numbers which have 1 in second place without converting in string or char array.
  *
  **/
-package com.codeforsolution.logical.sda;
+package com.codeforsolution.logical.dsa;
 
 import java.util.Arrays;
 import java.util.List;

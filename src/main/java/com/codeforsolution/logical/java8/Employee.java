@@ -1,88 +1,36 @@
 package com.codeforsolution.logical.java8;
 
 
-import java.util.Objects;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+import java.util.Arrays;
+import java.util.List;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Employee {
+
     private Integer id;
     private String name;
     private Integer age;
-    private String gender;
     private Double salary;
+    private String gender;
+    private String department;
+    private String city;
 
-    public Employee(Integer id, String name, Integer age, Double salary, String gender) {
-        this.id = id;
-        this.name = name;
-        this.age = age;
-        this.salary = salary;
-        this.gender = gender;
-    }
-
-    public Employee(Employee employee) {
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Integer getAge() {
-        return age;
-    }
-
-    public void setAge(Integer age) {
-        this.age = age;
-    }
-
-    public String getGender() {
-        return gender;
-    }
-
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
-
-    public Double getSalary() {
-        return salary;
-    }
-
-    public void setSalary(Double salary) {
-        this.salary = salary;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Employee employee = (Employee) o;
-        return Objects.equals(id, employee.id) && Objects.equals(name, employee.name) && Objects.equals(age, employee.age) && Objects.equals(gender, employee.gender) && Objects.equals(salary, employee.salary);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, name, age, gender, salary);
-    }
-
-    @Override
-    public String toString() {
-        return "Employee{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", age=" + age +
-                ", gender='" + gender + '\'' +
-                ", salary=" + salary +
-                '}';
+    public static List<Employee> getEmployee() {
+        return Arrays.asList(new Employee(1, "Ramesh", 25, 25000.00, "Male", "Phy", "Pune"),
+                // new Employee(2, "Shyam", 65, 85000.00, "Male"),
+                new Employee(3, "Mohan", 32, 25000.00, "Male", "Math", "Banglore"),
+                new Employee(4, "Sohan", 28, 13765.00, "Male", "Math", "Hyderabad"),
+                new Employee(8, "Soni", 24, 16765.00, "Female", "Phy", "Pune"),
+                new Employee(5, "Gita", 29, 26000.00, "Female", "Che", "Delhi"),
+                new Employee(9, "Sweta", 34, 20000.00, "Female", "Che","Delhi"),
+                new Employee(10, "Rakhi", 22, 28000.00, "Female", "Phy", "Banglore")
+        );
     }
 }
 

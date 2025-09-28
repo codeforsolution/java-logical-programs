@@ -1,4 +1,4 @@
-package com.codeforsolution.logical.sda;
+package com.codeforsolution.logical.dsa;
 
 public class SetZeroMatrix {
     public static void main(String[] args) {
